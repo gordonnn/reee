@@ -58,6 +58,11 @@ client.on ("message", (message) => {
         message.channel.send ( {files: ["./shira/" + imageNumber + ".png"]} )
     }
     
+        if (message.content.startsWith ("כוסית תביאי לי ציצים")) {
+        number = 10;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./tits/" + imageNumber + ".gif"]} )
+    }
     
 });
 

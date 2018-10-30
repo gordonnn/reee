@@ -31,10 +31,14 @@ client.on ("message", (message) => {
     }
   
     if (message.content.startsWith ("כוסית אני צריך עזרה")) {
+        message.channel.send ("**NSFW הבוט עובד רק בחדר**");
+        message.channel.send ("אני חרמן על הילה = תמונות של ילדה כוסית בשם הילה");
         message.channel.send ("אני חרמן על הילה = תמונות של ילדה כוסית בשם הילה");
         message.channel.send ("אני חרמן על גאיה = תמונות של ילדה כוסית בשם גאיה");
         message.channel.send ("אני חרמן על אלי = תמונות של ילדה כוסית בשם אלי");
         message.channel.send ("אני חרמן על שירה = תמונות של ילדה כוסית בשם שירה");
+        message.channel.send ("כוסית תביאי לי ציצי");
+        message.channel.send ("כוסית תביאי לי תחת");
     }
 
     if (message.content.startsWith ("היי")) {
@@ -76,8 +80,6 @@ client.on ("message", (message) => {
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         message.channel.nsfw ( {files: ["./ass/" + imageNumber + ".gif"]} )
     }
-
-    
     
 });
 

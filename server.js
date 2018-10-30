@@ -64,6 +64,12 @@ client.on ("message", (message) => {
         message.channel.send ( {files: ["./tits/" + imageNumber + ".gif"]} )
     }
     
+            if (message.content.startsWith ("כוסית תביאי לי תחת")) {
+        number = 10;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./ass/" + imageNumber + ".gif"]} )
+    }
+    
 });
 
 client.login(NDk5NjUwODU4NDg1Njc4MTIw.DqILuw.Do1X6dZXGSeCbxGru-ll-1MuFng);

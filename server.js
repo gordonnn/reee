@@ -48,37 +48,37 @@ client.on ("message", (message) => {
     if (message.content.startsWith ("אני חרמן על אלי")) {
         number = 8;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.nsfw ( {files: ["./ELI/" + imageNumber + ".png"]} )
+        message.channel.send ( {files: ["./ELI/" + imageNumber + ".png"]} )
     }
 
     if (message.content.startsWith ("אני חרמן על גאיה")) {
         number = 5;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.nsfw ( {files: ["./gaya/" + imageNumber + ".png"]} )
+        message.channel.send ( {files: ["./gaya/" + imageNumber + ".png"]} )
     }
 
     if (message.content.startsWith ("אני חרמן על הילה")) {
         number = 7;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.nsfw ( {files: ["./hila/" + imageNumber + ".png"]} )
+        message.channel.send ( {files: ["./hila/" + imageNumber + ".png"]} )
     }
 
     if (message.content.startsWith ("אני חרמן על שירה")) {
         number = 10;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.nsfw ( {files: ["./shira/" + imageNumber + ".png"]} )
+        message.channel.send ( {files: ["./shira/" + imageNumber + ".png"]} )
     }
     
     if (message.content.startsWith ("כוסית תביאי לי ציצי")) {
         number = 40;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.nsfw ( {files: ["./tits/" + imageNumber + ".gif"]} )
+        message.channel.send ( {files: ["./tits/" + imageNumber + ".gif"]} )
     }
 
     if (message.content.startsWith ("כוסית תביאי לי תחת")) {
         number = 40;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.nsfw ( {files: ["./ass/" + imageNumber + ".gif"]} )
+        message.channel.send ( {files: ["./ass/" + imageNumber + ".gif"]} )
     }
     
 });

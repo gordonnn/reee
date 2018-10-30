@@ -6,7 +6,7 @@ var client = new discord.Client
 client.on ("ready", () => {
     console.log ("ready");
 
-    client.user.setGame ("with some chicks");
+    client.user.setGame ("help: כוסית אני צריך עזרה");
 });
 
 const prefix = "tb!";
@@ -29,6 +29,13 @@ client.on ("message", (message) => {
     if (message.content.startsWith ("שלום")) {
         message.channel.send ("אני שולח תמונות של כוסיות XD");
     }
+  
+    if (message.content.startsWith ("כוסית אני צריך עזרה")) {
+        message.channel.send ("אני חרמן על הילה = תמונות של ילדה כוסית בשם הילה");
+        message.channel.send ("אני חרמן על גאיה = תמונות של ילדה כוסית בשם גאיה");
+        message.channel.send ("אני חרמן על אלי = תמונות של ילדה כוסית בשם אלי");
+        message.channel.send ("אני חרמן על שירה = תמונות של ילדה כוסית בשם שירה");
+    }
 
     if (message.content.startsWith ("היי")) {
         message.channel.send ("SEND BOB AND VAGANA");
@@ -37,39 +44,41 @@ client.on ("message", (message) => {
     if (message.content.startsWith ("אני חרמן על אלי")) {
         number = 8;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.send ( {files: ["./ELI/" + imageNumber + ".png"]} )
+        message.channel.nsfw ( {files: ["./ELI/" + imageNumber + ".png"]} )
     }
 
     if (message.content.startsWith ("אני חרמן על גאיה")) {
         number = 5;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.send ( {files: ["./gaya/" + imageNumber + ".png"]} )
+        message.channel.nsfw ( {files: ["./gaya/" + imageNumber + ".png"]} )
     }
 
     if (message.content.startsWith ("אני חרמן על הילה")) {
         number = 7;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.send ( {files: ["./hila/" + imageNumber + ".png"]} )
+        message.channel.nsfw ( {files: ["./hila/" + imageNumber + ".png"]} )
     }
 
     if (message.content.startsWith ("אני חרמן על שירה")) {
         number = 10;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.send ( {files: ["./shira/" + imageNumber + ".png"]} )
+        message.channel.nsfw ( {files: ["./shira/" + imageNumber + ".png"]} )
     }
     
-        if (message.content.startsWith ("כוסית תביאי לי ציצים")) {
-        number = 10;
+    if (message.content.startsWith ("כוסית תביאי לי ציצי")) {
+        number = 40;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.send ( {files: ["./tits/" + imageNumber + ".gif"]} )
+        message.channel.nsfw ( {files: ["./tits/" + imageNumber + ".gif"]} )
     }
+
+    if (message.content.startsWith ("כוסית תביאי לי תחת")) {
+        number = 40;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.nsfw ( {files: ["./ass/" + imageNumber + ".gif"]} )
+    }
+
     
-            if (message.content.startsWith ("כוסית תביאי לי תחת")) {
-        number = 10;
-        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.send ( {files: ["./ass/" + imageNumber + ".gif"]} )
-    }
     
 });
 
-client.login(NDk5NjUwODU4NDg1Njc4MTIw.DqILuw.Do1X6dZXGSeCbxGru-ll-1MuFng);
+client.login("NDk5NjUwODU4NDg1Njc4MTIw.DqILuw.Do1X6dZXGSeCbxGru-ll-1MuFng");

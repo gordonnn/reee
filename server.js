@@ -2,6 +2,7 @@ const discord = require ('discord.js');
 
 var client = new discord.Client
 
+const token = "NDk5NjUwODU4NDg1Njc4MTIw.DqILuw.Do1X6dZXGSeCbxGru-ll-1MuFng";
 
 client.on ("ready", () => {
     console.log ("ready");
@@ -51,8 +52,14 @@ client.on ("message", (message) => {
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         message.channel.send ( {files: ["./hila/" + imageNumber + ".png"]} )
     }
+
+    if (message.content.startsWith ("אני חרמן על שירה")) {
+        number = 10;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./shira/" + imageNumber + ".png"]} )
+    }
     
     
 });
 
-client.login("NDk5NjUwODU4NDg1Njc4MTIw.DqILuw.Do1X6dZXGSeCbxGru-ll-1MuFng");
+client.login(process.env.token);

@@ -75,10 +75,17 @@ client.on ("message", (message) => {
         message.channel.send ( {files: ["./tits/" + imageNumber + ".gif"]} )
     }
 
-    if (message.content.startsWith ("כוסית תביאי לי תחת")) {
+    if (message.content.startsWith("כוסית תביאי לי תחת")) {
+
+        if (message.channel.nsfw) {
         number = 40;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.send ( {files: ["./ass/" + imageNumber + ".gif"]} )
+        message.channel.send ( {files: ["./ass/" + imageNumber + ".gif"]})
+        }
+
+        else {
+            message.channel.send("**לך לחדר NSFW**");
+        }
     }
     
 });

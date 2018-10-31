@@ -35,7 +35,7 @@ client.on ("message", (message) => {
         if (message.channel.nsfw) {
         number = 8;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.nsfw ( {files: ["./ELI/" + imageNumber + ".png"]} )
+        message.channel.send ( {files: ["./ELI/" + imageNumber + ".png"]} )
         }
         else {
             message.channel.send("**NSFW הפקודה הזאת עובדת רק בחדר**");
@@ -47,7 +47,7 @@ client.on ("message", (message) => {
         if (message.channel.nsfw) {
         number = 5;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.nsfw ( {files: ["./gaya/" + imageNumber + ".png"]} )
+        message.channel.send ( {files: ["./gaya/" + imageNumber + ".png"]} )
         }
         else {
             message.channel.send("**NSFW הפקודה הזאת עובדת רק בחדר**");
@@ -59,7 +59,7 @@ client.on ("message", (message) => {
         if (message.channel.nsfw) {
         number = 7;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.nsfw ( {files: ["./hila/" + imageNumber + ".png"]} )
+        message.channel.send ( {files: ["./hila/" + imageNumber + ".png"]} )
         }
 
         else {
@@ -72,7 +72,7 @@ client.on ("message", (message) => {
         if (message.channel.nsfw) {
         number = 10;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.nsfw ( {files: ["./shira/" + imageNumber + ".png"]} )
+        message.channel.send ( {files: ["./shira/" + imageNumber + ".png"]} )
         }
 
         else {

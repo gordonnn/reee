@@ -29,52 +29,71 @@ client.on ("message", (message) => {
     if (message.content.startsWith ("שלום")) {
         message.channel.send ("אני שולח תמונות של כוסיות XD");
     }
-  
-    if (message.content.startsWith ("כוסית אני צריך עזרה")) {
-        message.channel.send ("**NSFW הבוט עובד רק בחדר**");
-        message.channel.send ("אני חרמן על הילה = תמונות של ילדה כוסית בשם הילה");
-        message.channel.send ("אני חרמן על הילה = תמונות של ילדה כוסית בשם הילה");
-        message.channel.send ("אני חרמן על גאיה = תמונות של ילדה כוסית בשם גאיה");
-        message.channel.send ("אני חרמן על אלי = תמונות של ילדה כוסית בשם אלי");
-        message.channel.send ("אני חרמן על שירה = תמונות של ילדה כוסית בשם שירה");
-        message.channel.send ("כוסית תביאי לי ציצי");
-        message.channel.send ("כוסית תביאי לי תחת");
-    }
-
-    if (message.content.startsWith ("היי")) {
-        message.channel.send ("SEND BOB AND VAGANA");
-    }
 
     if (message.content.startsWith ("אני חרמן על אלי")) {
+
+        if (message.channel.nsfw) {
         number = 8;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.send ( {files: ["./ELI/" + imageNumber + ".png"]} )
+        message.channel.nsfw ( {files: ["./ELI/" + imageNumber + ".png"]} )
+        }
+        else {
+            message.channel.send("**NSFW הפקודה הזאת עובדת רק בחדר**");
+        }
     }
 
     if (message.content.startsWith ("אני חרמן על גאיה")) {
+
+        if (message.channel.nsfw) {
         number = 5;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.send ( {files: ["./gaya/" + imageNumber + ".png"]} )
+        message.channel.nsfw ( {files: ["./gaya/" + imageNumber + ".png"]} )
+        }
+        else {
+            message.channel.send("**NSFW הפקודה הזאת עובדת רק בחדר**");
+        }
     }
 
     if (message.content.startsWith ("אני חרמן על הילה")) {
+
+        if (message.channel.nsfw) {
         number = 7;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.send ( {files: ["./hila/" + imageNumber + ".png"]} )
+        message.channel.nsfw ( {files: ["./hila/" + imageNumber + ".png"]} )
+        }
+
+        else {
+            message.reply("**NSFW הפקודה הזאת עובדת רק בחדר**");
+        }
     }
 
     if (message.content.startsWith ("אני חרמן על שירה")) {
+        
+        if (message.channel.nsfw) {
         number = 10;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.send ( {files: ["./shira/" + imageNumber + ".png"]} )
+        message.channel.nsfw ( {files: ["./shira/" + imageNumber + ".png"]} )
+        }
+
+        else {
+            message.reply("**NSFW הפקודה הזאת עובדת רק בחדר**");
+        }
     }
     
     if (message.content.startsWith ("כוסית תביאי לי ציצי")) {
-        number = 40;
-        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-        message.channel.send ( {files: ["./tits/" + imageNumber + ".gif"]} )
+        
+        if (message.channel.nsfw) {
+            number = 40;
+            imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+            message.channel.send ( {files: ["./tits/" + imageNumber + ".gif"]})
+            }
+
+        else {
+            message.reply("**NSFW הפקודה הזאת עובדת רק בחדר**");
+        }
     }
 
+    
     if (message.content.startsWith("כוסית תביאי לי תחת")) {
 
         if (message.channel.nsfw) {
@@ -84,7 +103,7 @@ client.on ("message", (message) => {
         }
 
         else {
-            message.channel.send("**לך לחדר NSFW**");
+            message.reply("**NSFW הפקודה הזאת עובדת רק בחדר**");
         }
     }
     

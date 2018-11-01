@@ -30,6 +30,16 @@ client.on ("message", (message) => {
         message.channel.send ("אני שולח תמונות של כוסיות XD");
     }
 
+    if (message.content.startsWith ("כוסית אני צריך עזרה")) {
+        message.member.send ("מה קורה אני בוט של **כוסיות** ואני אגיד לך את הפקודות יא חרמן מניאק");
+        message.member.send (" 1. אני חרמן על הילה = תמונות של ילדה כוסית בשם הילה");
+        message.member.send (" 2. אני חרמן על גאיה = תמונות של ילדה כוסית בשם גאיה");
+        message.member.send (" 3. אני חרמן על אלי = תמונות של ילדה כוסית בשם אלי");
+        message.member.send (" 4. אני חרמן על שירה = תמונות של ילדה כוסית בשם שירה");
+        message.member.send (" 5. כוסית תביאי לי ציצי");
+        message.member.send ("כוסית תשלחי לי תחת 6");
+    }
+
     if (message.content.startsWith ("אני חרמן על אלי")) {
 
         if (message.channel.nsfw) {
@@ -38,7 +48,7 @@ client.on ("message", (message) => {
         message.channel.send ( {files: ["./ELI/" + imageNumber + ".png"]} )
         }
         else {
-            message.channel.send("**NSFW הפקודה הזאת עובדת רק בחדר**");
+            message.reply("**NSFW הפקודה הזאת עובדת רק בחדר**");
         }
     }
 
@@ -50,7 +60,7 @@ client.on ("message", (message) => {
         message.channel.send ( {files: ["./gaya/" + imageNumber + ".png"]} )
         }
         else {
-            message.channel.send("**NSFW הפקודה הזאת עובדת רק בחדר**");
+            message.reply("**NSFW הפקודה הזאת עובדת רק בחדר**");
         }
     }
 

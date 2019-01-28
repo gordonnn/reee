@@ -93,7 +93,7 @@ client.on ("message", (message) => {
     if (message.content.startsWith ("כוסית תביאי לי ציצי")) {
         
         if (message.channel.nsfw) {
-            number = 40;
+            number = 59;
             imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
             message.channel.send ( {files: ["./tits/" + imageNumber + ".gif"]})
             }
@@ -110,6 +110,33 @@ client.on ("message", (message) => {
         number = 40;
         imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
         message.channel.send ( {files: ["./ass/" + imageNumber + ".gif"]})
+        }
+
+        else {
+            message.reply("**NSFW הפקודה הזאת עובדת רק בחדר**");
+        }
+    }
+
+
+    if (message.content.startsWith("אני חרמן על שלי")) {
+
+        if (message.channel.nsfw) {
+        number = 5;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./shelly/" + imageNumber + ".png"]})
+        }
+
+        else {
+            message.reply("**NSFW הפקודה הזאת עובדת רק בחדר**");
+        }
+    }
+
+    if (message.content.startsWith("אני חרמן על רביד")) {
+
+        if (message.channel.nsfw) {
+        number = 8;
+        imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send ( {files: ["./ravid/" + imageNumber + ".png"]})
         }
 
         else {
